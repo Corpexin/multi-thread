@@ -11,17 +11,19 @@ public class Main {
         Thread ti = new Thread(i, "Hilo Ingresador");
         Thread tg = new Thread(g, "Hilo Gastador");
 
+        tg.start();
         ti.start();
 
         try {
-            ti.sleep(500);
+            ti.sleep(300);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
-        tg.start();
+
+
         try {
-            tg.sleep(500);
+            tg.sleep(100);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

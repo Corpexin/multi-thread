@@ -10,7 +10,10 @@ public class Gastador implements Runnable{
 
     @Override
     public void run() {
-        cuenta.gastarDinero(10);
-        cuenta.gastarDinero(10);
+        for(int i=0 ; i<3 ; i++){
+            cuenta.gastarDinero(3);
+
+        }
+
     }
 }

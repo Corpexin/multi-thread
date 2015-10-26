@@ -9,17 +9,23 @@ public class Cuenta {
 
     public synchronized void ingresarDinero(float cant){
         saldo = saldo + cant;
+        consultaSaldo();
         try {
-            Thread.sleep(300);
+            Thread.sleep(200);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
 
-    public synchronized void gastarDinero(float cant){
+    private  void consultaSaldo() {
+        System.out.println("Saldo = "+saldo);
+    }
+
+    public synchronized  void gastarDinero(float cant){
         saldo = saldo - cant;
+        consultaSaldo();
         try {
-            Thread.sleep(300);
+            Thread.sleep(200);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

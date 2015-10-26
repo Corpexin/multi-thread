@@ -23,12 +23,12 @@ public class Main {
         //Espero a que uno de los hilos finalice
         while (grupoCorredores.activeCount() > 9) {
             try {
-                TimeUnit.SECONDS.sleep(1);
+                Thread.sleep(1);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
-        grupoCorredores.interrupt();
+        grupoCorredores.interrupt(); //interrumpo al resto
 
 
     }

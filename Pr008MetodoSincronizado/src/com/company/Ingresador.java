@@ -10,8 +10,10 @@ public class Ingresador implements Runnable {
 
     @Override
     public void run() {
-        cuenta.ingresarDinero(20);
-        cuenta.ingresarDinero(15);
-        cuenta.ingresarDinero(5);
+        for(int i=0 ; i<3 ; i++){
+            cuenta.ingresarDinero(5);
+        }
+
+
     }
 }
