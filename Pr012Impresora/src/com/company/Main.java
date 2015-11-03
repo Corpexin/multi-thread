@@ -12,8 +12,8 @@ public class Main {
         }
 
         //lanzo los hilos
-        for(int i = 0 ; i<hilos.length ; i++){
-            hilos[i].start();
+        for (Thread hilo : hilos) {
+            hilo.start();
         }
     }
 }
