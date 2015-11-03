@@ -10,6 +10,5 @@ public class Cliente implements Runnable {
     public void run() {
         //Consulta el precio getPrecio
         prod.getPrecio();
-
     }
 }
