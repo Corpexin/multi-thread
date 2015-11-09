@@ -28,7 +28,7 @@ public class PilaPlatos {
         synchronized (this){ //??
             for(int i =0 ; i<numPlatos ; i++){
                 platos.add(i);
-                System.out.println("Plato Añadido en pila id:"+i);
+                System.out.println(Thread.currentThread().getName()+" - Plato Aï¿½adido en pila id:"+i);
             }
             notifyAll();
 
@@ -47,7 +47,7 @@ public class PilaPlatos {
             ArrayList<Integer> auxRem = new ArrayList<>();
             for(int i = 0 ; i<numPlatos ; i++){
                 auxRem.add(platos.get(i));
-                System.out.println("Plato Sacado de Pila id:"+platos.get(i));
+                System.out.println(Thread.currentThread().getName()+" - Plato Sacado de Pila id:"+platos.get(i));
             }
             platos.removeAll(auxRem);
         }
