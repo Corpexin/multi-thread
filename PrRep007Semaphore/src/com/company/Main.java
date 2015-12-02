@@ -17,17 +17,18 @@ public class Main {
     //getQueueLength() numero de hilos esperando
     //isFair() si esta activado el modo justo
 
-    public static void main(String[] args) {
-        //Creamos impresora
-        Impresora imp = new Impresora();
-        //Creamos los hilos pasandole la impresora
-        Thread[] hilos = new Thread[10];
-        for(int i=0 ; i<hilos.length ; i++){
-            hilos[i] = new Thread(new Impresor(imp), "Impresor"+i);
+    public static void main (String args[]) {
+        // Creo la cola de impresión.
+        ColaImpresion colaImpresion = new ColaImpresion();
+        // Creo doce hilos para los trabajos de impresión.
+        Thread hilos[] = new Thread[12];
+        for (int i = 0; i < 12; i++){
+            hilos[i] = new Thread(new Trabajo(colaImpresion), "Trabajo " + i);
         }
-        //Iniciamos los hilos
-        for(Thread t : hilos){
-            t.start();
+        // Inicio los hilos.
+        for (int i = 0; i < 12; i++){
+            hilos[i].start();
         }
     }
+
 }
