@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
         //Mas potente y flexible que synchronized
         //Funcionalidades adicionales como trylock
-        //oernute qye gata varios hilos lectores con readlock
+        //permite que haya varios hilos lectores con readlock
         //mejor rendimiento
 
         //Los lock van el en pasivo, al igual que los synchro

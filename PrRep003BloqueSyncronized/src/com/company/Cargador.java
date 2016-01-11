@@ -16,7 +16,7 @@ public class Cargador implements Runnable{
         for(int i=0 ; i<aleat ; i++){
             if(cuenta.saldo>=1000)
                 cuenta.sacarDinero(rnd.nextInt(1000));
-            //simulamos tiempos de espera entre cada transaccion
+            //simulamos tizempos de espera entre cada transaccion
             try {
                 Thread.sleep(rnd.nextInt(5000));
             } catch (InterruptedException e) {

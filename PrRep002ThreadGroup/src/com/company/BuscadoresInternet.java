@@ -11,7 +11,7 @@ public class BuscadoresInternet implements Runnable {
         try {
             Thread.sleep(rnd.nextInt(5000)+5000);
             System.out.println("Busqueda terminada - "+Thread.currentThread().getName());
-        } catch (InterruptedException e) {}
+        } catch (InterruptedException ignored) {}
 
         //para que un hilo termine su ejecucion de forma chunga se puede usar return; asecas
     }

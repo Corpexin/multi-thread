@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Almacen {
     ArrayList<String> elementos;
     private Object cerrojo = new Object();//aqui no tendria sentido crear un cerrojo aparte, pudiendo usar this. Solo se crea cuando haya mas de 1
+    //varios mutex se suele usar cuando los thread actuan sobre mas de un elemento, y que sean independientes entre si.
     final int LIMITE = 3;
     public Almacen(){
         elementos = new ArrayList<>(); //almacen de 10 elementos

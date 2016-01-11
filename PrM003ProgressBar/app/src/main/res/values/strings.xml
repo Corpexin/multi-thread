@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PrM003ProgressBar</string>
+    <string name="iniciar">Iniciar</string>
+    <string name="trabajando">Trabajando</string>
+</resources>
