@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/card_padding"
+        android:paddingBottom="@dimen/card_padding">
+
+        <ImageView
+            android:id="@+id/imgFoto"
+            android:layout_width="@dimen/tarjeta_foto_width"
+            android:layout_height="@dimen/tarjeta_foto_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/foto_del_alumno"
+            android:src="@drawable/foto"/>
+
+        <TextView
+            android:id="@+id/lblNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imgFoto"
+            android:layout_toEndOf="@+id/imgFoto"
+            android:paddingLeft="@dimen/card_content_padding"
+            android:paddingRight="@dimen/card_content_padding"
+            tools:text="Baldomero Llégate Ligero"
+            style="@style/Base.TextAppearance.AppCompat.Subhead"/>
+
+        <TextView
+            android:id="@+id/lblCurso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblNombre"
+            android:layout_toRightOf="@+id/imgFoto"
+            android:layout_toEndOf="@+id/imgFoto"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:paddingLeft="@dimen/card_content_padding"
+            android:paddingRight="@dimen/card_content_padding"
+            tools:text="2º CFGS DAM"
+            style="@style/Base.TextAppearance.AppCompat.Body2"/>
+
+        <TextView
+            android:id="@+id/lblEdad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblCurso"
+            android:layout_toRightOf="@+id/imgFoto"
+            android:layout_toEndOf="@+id/imgFoto"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:paddingLeft="@dimen/card_content_padding"
+            android:paddingRight="@dimen/card_content_padding"
+            tools:text="22 años"
+            style="@style/Base.TextAppearance.AppCompat.Body2"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+
