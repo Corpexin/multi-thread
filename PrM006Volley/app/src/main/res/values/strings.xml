@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PrM006Volley</string>
+    <string name="listado_de_alumnos">Listado Alumnos</string>
+    <string name="foto_del_alumno">Foto</string>
+</resources>

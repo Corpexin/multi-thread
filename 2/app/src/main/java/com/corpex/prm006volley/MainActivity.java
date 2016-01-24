@@ -1,4 +1,4 @@
-package com.corpex.prm005httpurlconnectionpost;
+package com.corpex.prm006volley;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements Callbacks{
-    static ArrayList<Alumno> alumnos = new ArrayList<>();
+    static ArrayList<Alumno> alumnos = new ArrayList<>();;
     ListView lvAlumnos;
     TareaSecundaria tarea;
     final String myURL = "https://dl.dropboxusercontent.com/u/67422/Android/json/datos.json";

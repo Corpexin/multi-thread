@@ -20,7 +20,7 @@
             android:layout_alignParentTop="true"
             android:scaleType="centerCrop"
             android:contentDescription="@string/foto_del_alumno"
-            android:src="@drawable/foto"/>
+            android:src="@mipmap/foto"/>
 
         <TextView
             android:id="@+id/lblNombre"
