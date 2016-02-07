@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nuevo_alumno"
+            android:icon="@drawable/ic_nuevo_alumno"
+            android:title="@string/nuevoalumno" />
+        <item
+            android:id="@+id/tutorias"
+            android:icon="@drawable/ic_tutorias"
+            android:title="@string/tutorias" />
+        <item
+            android:id="@+id/prox_visitas"
+            android:icon="@drawable/ic_prox_visitas"
+            android:title="@string/proximasvisitas" />
+        <item
+            android:id="@+id/configuracion"
+            android:icon="@drawable/ic_configuracion"
+            android:title="@string/configuracion" />
+        <item
+            android:id="@+id/acerca_de"
+            android:icon="@drawable/ic_acerca_de"
+            android:title="@string/acercade" />
+    </group>
+
+</menu>

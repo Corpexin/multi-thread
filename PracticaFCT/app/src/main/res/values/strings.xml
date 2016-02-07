@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">PracticaFCT</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="nuevoalumno">Nuevo alumno</string>
+    <string name="tutorias">Tutorías</string>
+    <string name="proximasvisitas">Próximas visitas</string>
+    <string name="configuracion">Configuración</string>
+    <string name="acercade">Acerca de...</string>
+    <string name="formacion">Formación en centros de trabajo</string>
+    <string name="saladillo">IES Saladillo: CFGS - DAM</string>
+    <string name="confirmar">Confirmar alumno</string>
+    <string name="nombre">Nombre:</string>
+    <string name="movil">Teléfono Móvil:</string>
+    <string name="email">Email:</string>
+    <string name="empresa">Empresa:</string>
+    <string name="tutor">Tutor:</string>
+    <string name="horario">Horario laboral:</string>
+    <string name="direccion">Dirección:</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
